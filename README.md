@@ -1,4 +1,4 @@
-
+// Un README plus détaillé et mieux présenté est à venir
 
 Using the API : 
 1. To login
