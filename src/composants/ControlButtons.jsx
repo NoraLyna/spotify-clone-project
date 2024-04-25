@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-import { useStateProvider } from "../StateProvider";
-import { CasReducer } from "../Constantes";
+import { useStateProvider } from "../providers/StateProvider";
+import { CasReducer } from "../providers/Constantes";
 
 import styled from "styled-components";
 import { BsFillPlayCircleFill, BsFillPauseCircleFill, BsShuffle } from "react-icons/bs";
@@ -18,8 +18,7 @@ export default function ControlButtons() {
         const state = playerState ? "pause" : "play";
         //En pause, ou entrain de jouer
         //
-        await axios.put(
-          `https://api.spotify.com/v1/me/player/${state}`,
+        await axios.put(`https://api.spotify.com/v1/me/player/${state}`,
           {},
           {
             headers: {
@@ -96,7 +95,7 @@ export default function ControlButtons() {
         </div>
         
         </Container>
-    )
+    );
 }
 
 

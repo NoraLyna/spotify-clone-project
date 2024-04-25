@@ -1,12 +1,12 @@
 import React, {useEffect, useRef,useState} from "react";
 import styled from "styled-components";
-import { CasReducer } from "../Constantes";
+import { CasReducer } from "../providers/Constantes";
 import axios from "axios";
 import Sidebar from "./Sidebar";
 import Corps from "./Corps";
 import Navbar from "./Navigation";
 import Footer from "./Footer";
-import { useStateProvider } from "../StateProvider";
+import { useStateProvider } from "../providers/StateProvider";
 
 export default function Layout() {
 

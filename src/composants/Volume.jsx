@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 import styled from "styled-components";
-import { useStateProvider } from "../StateProvider";
+import { useStateProvider } from "../providers/StateProvider";
 
 export default function Volume() {
 

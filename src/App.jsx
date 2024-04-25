@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 import Login from './composants/Login.jsx';
 import Layout from './composants/Layout.jsx'
-import { useStateProvider } from './StateProvider.jsx';
-import { CasReducer } from './Constantes.jsx';
+import { useStateProvider } from './providers/StateProvider.jsx';
+import { CasReducer } from './providers/Constantes.jsx';
 
 export default function App() {
   const [{token}, dispatch] = useStateProvider ()

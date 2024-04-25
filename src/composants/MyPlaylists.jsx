@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
-import { useStateProvider } from '../StateProvider';
+import { useStateProvider } from '../providers/StateProvider';
 import axios from 'axios';
-import { CasReducer } from '../Constantes';
+import { CasReducer } from '../providers/Constantes';
 import styled from 'styled-components';
 
 //Affiche les playlists du compte premium dans le sidebar

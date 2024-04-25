@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaSearch } from 'react-icons/fa';
 import {CgProfile} from "react-icons/cg";
-import { useStateProvider } from '../StateProvider';
+import { useStateProvider } from '../providers/StateProvider';
 
 export default function Navbar({navBackground}) {
 

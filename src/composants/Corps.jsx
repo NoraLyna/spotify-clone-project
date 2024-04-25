@@ -1,9 +1,9 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { useStateProvider } from "../StateProvider";
+import { useStateProvider } from "../providers/StateProvider";
 import { AiFillClockCircle } from "react-icons/ai";
-import { CasReducer } from "../Constantes";
+import { CasReducer } from "../providers/Constantes";
 
 
 export default function Corps({ headerBackground }){
@@ -58,47 +58,7 @@ export default function Corps({ headerBackground }){
     };
     getInitialPlaylist();
 
-    //Changer de chanson dans une playlist
-    const PlayTrack = async (
-      id,
-      name,
-      artists,
-      image,
-      context_uri,
-      track_number
-    ) => {
-      const response = await axios.put(
-        `https://api.spotify.com/v1/me/player/play`,
-        {
-          context_uri,
-          offset: {
-            position: track_number - 1,
-          },
-          position_ms: 0,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: "Bearer " + token,
-          },
-        }
-      );
-      if (response.status === 204) {
-        const currentPlaying = {
-          id,
-          name,
-          artists,
-          image,
-        };
-        dispatch({ type: CasReducer.SET_PLAYING, currentPlaying });
-        dispatch({ type: CasReducer.SET_PLAYER_STATE, playerState: true });
-      } else {
-        dispatch({ type: CasReducer.SET_PLAYER_STATE, playerState: true });
-      }
-    };
-
   }, [token, dispatch, selectedPlaylistId]);
- 
 
 
   return (

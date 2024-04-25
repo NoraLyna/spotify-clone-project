@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
-import { useStateProvider } from "../StateProvider";
-import { CasReducer } from "../Constantes";
-
+import { useStateProvider } from "../providers/StateProvider";
+import { CasReducer } from "../providers/Constantes";
 
 export default function Track() {
 
