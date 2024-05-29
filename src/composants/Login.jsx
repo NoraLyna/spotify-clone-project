@@ -5,7 +5,7 @@ export default function Login() {
 
     const handleClick = () => {
         //Le client ID est dispo sur le site spotify dev après avoir créé un projet
-        const client_id = "ddf8ad556f7044d7b917f63a3bb763e8";
+        const client_id = "";
         const redirectUrl = "http://localhost:5173/";
         const apiUrl = "https://accounts.spotify.com/authorize";
         //Nous redirige vers le login
