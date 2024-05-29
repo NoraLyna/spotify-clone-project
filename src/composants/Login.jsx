@@ -31,7 +31,7 @@ export default function Login() {
         )}&response_type=token&show_dialog=true`;
     };
     //Important !! Il faut avoir premium
-    //access token créé et qui s'ajoute à l'URL : #access_token=BQCIm9Imay0CrSnLcy2nU0VeYXiO0MqKqnyj1dXzvxbK2ep36A3PMfoqEOgEruibvkvrwf6n3xOAU1W2qqszxbMmIBLb4St-j9wd9gOW4e9fW-ELu6AtH9cCDdJe5hDTWebMfCPcDcoJl7_cHsOCfweF0DytLPvmOh8nKDXaGrt3jT_SAZNqkXy-1URTx20cm3VUzJiTx60xwt4wNhXbdkOX-wWkF3Tq49K-8egE&token_type=Bearer&expires_in=3600
+    //access token créé et qui s'ajoute à l'URL : #access_token=&token_type=Bearer&expires_in=3600
     
     return <Container>
         <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Black.png" alt="logo"/>
